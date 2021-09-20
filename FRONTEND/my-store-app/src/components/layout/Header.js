@@ -4,7 +4,7 @@ class Header extends Component {
   render() {
     return (
       /* Header*/
-      <header className="bg-primary py-4">
+      <header className="bg-primary py-1">
         <div className="container-fluid text-white">
           <div className="row">
             <div className="col-1 align-self-center">

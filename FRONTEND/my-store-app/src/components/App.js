@@ -1,11 +1,16 @@
 import React, {Component} from 'react';
 import './App.css';
-import Login from './login/Login.js';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import DieuHuongURL from './../router/DieuHuongURL';
 
 class App extends Component {
   render() {
     return (
-      <Login/>
+      <Router>
+        <div>
+          <DieuHuongURL />          
+        </div>
+      </Router>
     );
   }
 }

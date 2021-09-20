@@ -26,7 +26,7 @@ function authenticateDN(username, password){
     }
   });
 }
-authenticateDN("cn=duy,ou=users,ou=system","123")
+authenticateDN("cn=duy,ou=users,ou=system","123") 
 
 
 /* GET home page. */
