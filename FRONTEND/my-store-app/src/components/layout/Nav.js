@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 class Nav extends Component {
   render() {
@@ -8,8 +9,10 @@ class Nav extends Component {
         <div className="container-fluid col-10" style={{ paddingLeft: 0 }}>
           <div className="navbar-collapse float-left">
             <ul className="navbar-nav">
-              <li className="nav-item"><a className="nav-link text-white" href="#" style={{ textTransform: 'uppercase', fontWeight: 600, paddingRight: '30px' }}>Trang chủ</a></li>
-              <li className="nav-item"><a className="nav-link text-white" href="#" style={{ textTransform: 'uppercase', fontWeight: 600, paddingRight: '30px' }}>Tìm kiếm tài liệu</a></li>
+              <li className="nav-item">
+                <Link className="nav-link text-white" to="/" style={{ textTransform: 'uppercase', fontWeight: 600, paddingRight: '30px' }}>Trang chủ</Link>
+                </li>
+              <li className="nav-item"><Link className="nav-link text-white" to="/searchpro" style={{ textTransform: 'uppercase', fontWeight: 600, paddingRight: '30px' }}>Tìm kiếm tài liệu</Link></li>
               <li className="nav-item"><a className="nav-link text-white" href="#" style={{ textTransform: 'uppercase', fontWeight: 600, paddingRight: '30px' }}>Giới thiệu</a></li>
               <li className="nav-item"><a className="nav-link text-white" href="#" style={{ textTransform: 'uppercase', fontWeight: 600, paddingRight: '30px' }}>Ảnh</a></li>
               {/*<li class="nav-item dropdown">
