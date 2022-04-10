@@ -6,8 +6,8 @@ class Footer extends Component {
       /* footer */
       <div className="container-fluid bg-secondary">
         <div className="row" style={{ justifyContent: 'center' }}>
-          <div className="col-0.5 align-self-center">
-            <a href="#" className="logo-header"><img alt="" src="./images/logo.png" style={{ height: '60px' }} /></a>
+          <div className="col-1 align-self-center" style={{ textAlign: 'center' }}>
+            <a href="#" className="logo-header"><img alt="" src="./images/logo.png" style={{ height: '70px' }} /></a>
           </div>
           <div className="col-9">
             <br />
@@ -16,8 +16,7 @@ class Footer extends Component {
               ĐT: 0292 3 831565 - Email: office@cit.ctu.edu.vn<br />
             </address>
           </div>
-          <div className="col-md-3">
-          </div>
+          
         </div>
       </div>
 

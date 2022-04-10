@@ -1,0 +1,16 @@
+.content {
+  padding-top: 15px;
+}
+.title {
+  text-align: center;
+  color: #dc3545;
+}
+.formCheck{
+  margin-bottom: 5px!important;
+}
+.label{
+  font-family: Roboto, sans-serif;
+}
+.tbody {
+  border: 1px solid #dee2e6;;
+}

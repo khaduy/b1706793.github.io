@@ -48,6 +48,7 @@ function Login(props) {
               <div className="input-group mb-3">
                 <input
                   type="text"
+                  name="username"
                   className="form-control"
                   placeholder="Username"
                   onChange={(e) => setUsername(e.target.value)}
@@ -57,6 +58,7 @@ function Login(props) {
               <div className="input-group mb-3">
                 <input
                   type="password"
+                  name="pass"
                   className="form-control"
                   placeholder="Password"
                   onChange={(e) => setPassword(e.target.value)}

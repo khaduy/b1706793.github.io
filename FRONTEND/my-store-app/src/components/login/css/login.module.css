@@ -10,11 +10,11 @@
   height: 7rem;
   width: 7rem;
   left: 50%;
-  transform: translate(90%, 0%);
+  transform: translate(96%, 0%);
 }
 
 .card {
-  position: absolute;
+  position: absolute !important;
   left: 50%;
   transform: translate(-50%, 50%);
   width: 360px;
@@ -24,9 +24,6 @@
   border-radius: 1rem !important;
 }
 
-.loginBox {
-  width: 360px;
-}
 /* Cap nhat thong tin */
 .update {
   position: absolute;

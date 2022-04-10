@@ -1,0 +1,30 @@
+.content {
+  padding-top: 15px;
+}
+.title {
+  text-align: center;
+  color: #dc3545;
+}
+.box {
+  height: 266.85px;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.img {
+  object-fit: cover;
+  width: 100%;
+}
+.modalBody {
+  text-align: center;
+  background-color: #222222;
+  height: 634px;
+  width: 1140px;
+  border-radius: 0.3rem;
+}
+.imgModal {
+  height: 600px;
+}

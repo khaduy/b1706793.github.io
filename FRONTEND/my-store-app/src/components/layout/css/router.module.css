@@ -1,11 +1,22 @@
-
 .hotline {
   position: fixed;
   right: 30px;
   bottom: 20px;
   z-index: 9000;
   display: block;
-  background: #28a745;
+  /* background: #28a745; */
+  background: #52c234; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #061700,
+    #52c234
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #061700,
+    #52c234
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   font-weight: 500;
   padding: 10px 25px;
   border: 5px solid #007bff;

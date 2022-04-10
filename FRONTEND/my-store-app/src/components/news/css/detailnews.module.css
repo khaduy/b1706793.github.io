@@ -1,0 +1,31 @@
+.container {
+  margin: 20px 0;
+}
+.title {
+  font-size: 24px;
+  line-height: 38px;
+  color: #0a4874;
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-family: SFUIText;
+}
+.time {
+  font-size: 16px;
+  line-height: 25px;
+  color: #237bd3;
+  display: block;
+  margin-bottom: 10px;
+  font-family: SFUIText;
+}
+.boxNews {
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+  margin-top: 20px;
+}
+.boxImage {
+  text-align: center;
+}
+.img {
+  max-height: 500px;
+}

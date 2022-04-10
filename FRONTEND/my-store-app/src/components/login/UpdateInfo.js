@@ -1,56 +1,58 @@
 import React, { useEffect, useState } from "react";
 import styles from "./css/login.module.css";
 import { capNhatUser } from "../../actions";
-import { BrowserRouter as Router, Route, Switch, useHistory } from "react-router-dom";
+import { Link, BrowserRouter as Router, Route, Switch, useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+import { DANG_XUAT } from "../../constants";
 
-function UpdateInfo(props) {
-  const dispatch = useDispatch();
+function UpdateInfo() {
   const history = useHistory()
   const dangNhap = useSelector((state) => state.dangNhap);
   console.log('dangNhap', dangNhap)
   const { userInfo } = dangNhap;
 
-  const [username, setUsername] = useState();
+  // const [username, setUsername] = useState();
   const [hoten, setHoten] = useState();
   const [diachi, setDiachi] = useState();
   const [sdt, setSdt] = useState();
   const [email, setEmail] = useState();
+  const dispatch = useDispatch();
+  const dangXuat = () => {
+    dispatch({ type: DANG_XUAT });
+  };
 
   const handleSubmit = async (e) => {
-    var un = userInfo?.usernames;
+    var username = userInfo?.usernames;
     var token = userInfo?.token;
-    var check = true;
+    var check = "true";
     e.preventDefault();
     const info = {
       check,
       token,
-      un,
+      username,
       hoten,
       diachi,
       sdt,
       email
     };
     dispatch(capNhatUser(info));
-    history.push("/");
-    var userCurrent = localStorage.getItem("userInfo")
+    var userCurrent = localStorage.getItem("userInfo");
     userCurrent = JSON.parse(userCurrent);
     localStorage.removeItem("userInfo");
     localStorage.setItem("userInfo", JSON.stringify({ userInfo: info }));
-    
-    
-    // window.location.reload();
+    history.push("/");
+    window.location.reload();
   };
 
   useEffect(() => {
     if (userInfo) {
-      if (userInfo.check === true) {
+      if (userInfo.check == "true") {
         history.push("/");
-        // window.location.reload();
+        window.location.reload();
       }
     } else {
       history.push("/login");
-      // window.location.reload();
+      window.location.reload();
     }
   }, [userInfo]);
 
@@ -151,7 +153,23 @@ function UpdateInfo(props) {
               </div>
               <div className="row">
                 <div
-                  className="col-md-12"
+                  className="col-md-2"
+                  style={{ textAlign: "left" }}
+                  id="btnedit"
+                >
+                  <Link to="/login">
+                  <button
+                    style={{ maxHeight: "38px" }}
+                    type="submit"
+                    className="btn btn-primary"
+                    onClick={dangXuat}
+                  >
+                    Thoát ra
+                  </button>
+                  </Link>
+                </div>
+                <div
+                  className="col-md-10"
                   style={{ textAlign: "right" }}
                   id="btnedit"
                 >

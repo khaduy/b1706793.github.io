@@ -1,39 +1,51 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import styles from "./css/nav.module.css";
 
-class Nav extends Component {
-  render() {
-    return (
-      /* Navigation*/
-      <nav className="navbar navbar-expand-lg navbar-light bg-secondary">
-        <div className="container-fluid col-10" style={{ paddingLeft: 0 }}>
-          <div className="navbar-collapse float-left">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <Link className="nav-link text-white" to="/" style={{ textTransform: 'uppercase', fontWeight: 600, paddingRight: '30px' }}>Trang chủ</Link>
-                </li>
-              <li className="nav-item"><Link className="nav-link text-white" to="/searchpro" style={{ textTransform: 'uppercase', fontWeight: 600, paddingRight: '30px' }}>Tìm kiếm tài liệu</Link></li>
-              <li className="nav-item"><a className="nav-link text-white" href="#" style={{ textTransform: 'uppercase', fontWeight: 600, paddingRight: '30px' }}>Giới thiệu</a></li>
-              <li className="nav-item"><a className="nav-link text-white" href="#" style={{ textTransform: 'uppercase', fontWeight: 600, paddingRight: '30px' }}>Ảnh</a></li>
-              {/*<li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">Shop</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#!">All Products</a></li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li><a class="dropdown-item" href="#!">Popular Items</a></li>
-                  <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
-                </ul>
-              </li>*/}
-            </ul>
-          </div>
+function Nav() {
+  return (
+    /* Navigation*/
+    <nav className={`${styles.nav} navbar navbar-expand-lg navbar-light`} >
+      <div className={`${styles.container} container-fluid col-10`}>
+        <div className="navbar-collapse float-left">
+          <ul className="navbar-nav">
+            <li className={`${styles.li} nav-item`}>
+              <Link
+                className={`${styles.link} nav-link text-white`}
+                to="/"
+              >
+                Trang chủ
+              </Link>
+            </li>
+            <li className={`${styles.li} nav-item`}>
+              <Link
+                className={`${styles.link} nav-link text-white`}
+                to="/searchpro"
+              >
+                Tìm kiếm tài liệu
+              </Link>
+            </li>
+            <li className={`${styles.li} nav-item`}>
+              <Link
+                className={`${styles.link} nav-link text-white`}
+                to="/introduce"
+              >
+                Giới thiệu
+              </Link>
+            </li>
+            <li className={`${styles.li} nav-item`}>
+              <Link
+                className={`${styles.link} nav-link text-white`}
+                to="/photos"
+              >
+                Ảnh
+              </Link>
+            </li>
+          </ul>
         </div>
-      </nav>
-
-    );
-  }
+      </div>
+    </nav>
+  )
 }
 
 export default Nav;

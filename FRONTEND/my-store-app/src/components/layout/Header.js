@@ -12,30 +12,32 @@ function Header() {
   const dangXuat = () => {
     dispatch({ type: DANG_XUAT });
   };
-
   useEffect(() => {
     if (userInfo) {
       if (userInfo.check === false) {
         history.push("/updateinfo");
-        // window.location.reload();
+        window.location.reload();
       }
     } else {
       history.push("/login");
-      // window.location.reload();
+      window.location.reload();
     }
   }, [userInfo]);
 
   return (
     /* Header*/
-    <header className="bg-primary py-1" style={{zIndex: "1000"}}>
+    <header className="bg-primary py-1" >
       <div className="container-fluid text-white">
         <div className="row">
           <div className="col-1 align-self-center">
-            <img
-              src="./images/logo.png"
-              className="img-fluid"
-              alt="Responsive image"
-            />
+            <Link to="/">
+              <img
+                src="/images/logo.png"
+                className="img-fluid"
+                alt="Responsive image"
+              />
+            </Link>
+
           </div>
           <div className="col-8" style={{ margin: "auto 0" }}>
             <h5>THƯ VIỆN KHOA</h5>
@@ -46,7 +48,7 @@ function Header() {
             <h5>Chào mừng đến với thư viện</h5>
             {userInfo ? (
               <>
-                <h6 style={{textTransform: "capitalize"}}>Xin chào: {userInfo.hoten}</h6>
+                <h6 style={{ textTransform: "capitalize" }}>Xin chào: {userInfo.hoten}</h6>
               </>
             ) : (
               <div> test </div>

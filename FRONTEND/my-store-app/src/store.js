@@ -1,10 +1,11 @@
 import { createStore, compose, applyMiddleware, combineReducers } from "redux";
 import thunk from "redux-thunk";
-import { capNhatUserReducer, dangNhapReducer } from "./reducers";
+import { capNhatUserReducer, dangNhapReducer, timKiemReducer } from "./reducers";
 
 const reducer = combineReducers({
   dangNhap: dangNhapReducer,
   capNhatUser: capNhatUserReducer,
+  timKiem: timKiemReducer,
 });
 
 const initialState = {

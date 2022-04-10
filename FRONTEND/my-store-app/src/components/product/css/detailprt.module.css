@@ -1,0 +1,70 @@
+.container {
+  padding-bottom: 165px;
+}
+.wrap {
+  border: 1px solid #80bdff;
+  padding: 10px;
+}
+.boximage {
+  text-align: center;
+  /* border: 1px solid black; */
+}
+.img {
+  object-fit: cover;
+  height: 200px;
+  width: auto;
+}
+.ul {
+  list-style-type: none;
+  margin: 5px;
+  padding: 5px;
+}
+.li {
+  margin-bottom: 5px;
+}
+.label {
+  width: 28%;
+  color: #005bea;
+  font-weight: 600;
+}
+.label1 {
+  font-family: Roboto, sans-serif;
+}
+.label2 {
+  width: 47%;
+  color: #005bea;
+  font-weight: 600;
+}
+.label3 {
+  font-family: Roboto, sans-serif;
+}
+.label4 {
+  color: #005bea;
+  font-weight: 600;
+  margin-bottom: 1px;
+  width: 28%;
+}
+.label5 {
+  font-family: Roboto, sans-serif;
+  line-height: 1.6;
+}
+.note {
+  margin: 0;
+  text-align: right;
+  padding-top: 10px;
+  color: black;
+}
+.note2 {
+  margin: 0;
+  text-align: right;
+  padding-top: 10px;
+  color: red;
+}
+.note1 {
+  margin: 0;
+  color: black;
+}
+.note4 {
+  margin: 0;
+  color: red;
+}

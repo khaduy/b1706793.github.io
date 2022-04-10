@@ -1,0 +1,37 @@
+.content {
+  padding-top: 15px;
+}
+.title {
+  text-align: center;
+  color: #dc3545;
+}
+.wrap1 {
+  border: 1px solid #80bdff;
+  /* max-height: 182px; */
+}
+.wrap2 {
+  border: 1px solid #80bdff;
+}
+.label1 {
+  font-weight: 600;
+  color: #005bea;
+}
+.h5 {
+  text-align: center;
+  margin-top: 5px;
+}
+.button {
+  margin-bottom: 10px;
+}
+.btnplus {
+  color: #6c757d!important;
+  border-color: #ced4da !important;
+}
+.btnplus:hover {
+  color: #005bea!important;
+  background-color: #f8f9fa;
+  border-color: #80bdff!important;
+}
+.row{
+  margin-bottom: 10px;
+}

@@ -1,0 +1,15 @@
+.content {
+  padding-top: 15px;
+}
+.title {
+  text-align: center;
+  color: #dc3545;
+  margin-bottom: 20px;
+}
+.wrap {
+  border: 1px solid #80bdff;
+}
+.h5{
+  text-align: center;
+  margin-top: 5px;
+}

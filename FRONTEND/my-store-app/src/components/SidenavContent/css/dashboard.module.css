@@ -1,0 +1,35 @@
+.content {
+  padding-top: 15px;
+}
+.title {
+  text-align: left;
+  color: #dc3545;
+}
+.bgAqua{
+  background-color: #00c0ef !important;
+}
+.bgGreen{
+  background-color: #28a745!important;
+}
+.bgYellow{
+  background-color: #f39c12 !important;
+}
+.bgInfo{
+  background-color: #17a2b8!important;
+}
+
+.cardBody1{
+  padding: 0.5rem 1rem 0px 1rem !important;
+}
+.cardBody2{
+  padding: 0.2rem 1rem 1rem 1rem !important;
+}
+.comp3{
+  padding-bottom: 50px;
+}
+
+.result {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: Roboto, sans-serif;
+}
